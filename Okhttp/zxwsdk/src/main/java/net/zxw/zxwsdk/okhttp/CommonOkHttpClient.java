@@ -1,6 +1,7 @@
 package net.zxw.zxwsdk.okhttp;
 
 import net.zxw.zxwsdk.okhttp.https.HttpsUtils;
+import net.zxw.zxwsdk.okhttp.response.CommonJsonCallback;
 
 import java.util.concurrent.TimeUnit;
 
@@ -54,7 +55,7 @@ public class CommonOkHttpClient {
      * @param commCallback
      * @return Call
      */
-    public static Call sendRequest(Request request, Callback commCallback){
+    public static Call sendRequest(Request request, CommonJsonCallback commCallback){
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(commCallback);
         return call;

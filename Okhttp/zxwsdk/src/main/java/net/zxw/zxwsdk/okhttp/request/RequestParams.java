@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * @author zxw
  * @Email 18316275391@163.com
- * @describe 封装所以请求参数到HashMap中
+ * @describe 封装所有请求参数到HashMap中
  */
 
 public class RequestParams {
